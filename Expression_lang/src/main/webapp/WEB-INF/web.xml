@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Expression_lang</display-name>
+	<servlet>
+  	<servlet-name>dbname-jsp</servlet-name>
+  	<jsp-file>/initparam.jsp</jsp-file>
+  	<init-param>
+  		<param-name>DB_NAME</param-name>
+  		<param-value>malldb</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>dbname-jsp</servlet-name>
+  	<url-pattern>/dbname</url-pattern>
+  </servlet-mapping>
+
+</web-app>
